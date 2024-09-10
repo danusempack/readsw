@@ -21,7 +21,7 @@ import (
 )
 
 func main() {
-    NewBot("6285796103714", func(k string) { //masukkan nomor kamu yang ingin di pasangkan auto read story wa
+    NewBot("6287866274739", func(k string) { //masukkan nomor kamu yang ingin di pasangkan auto read story wa
         println(k)
     }) 
 }
@@ -41,8 +41,8 @@ func registerHandler(client *whatsmeow.Client) func(evt interface{}) {
                         return
                     }
 
-                    time.Sleep(2 * time.Minute) //ini agar 2 menit kedepan akan otomatis dibaca tiap sw
-                    emojis := []string{"🔥", "✨", "🌟", "🌞", "🎉", "🎊", "😺"}
+                   
+                    emojis := []string{"🔥", "❤", "🌹", "☠️", "🐦", "🤘🏻", "😺"}
                     rand.Seed(time.Now().UnixNano())
                     randomEmoji := emojis[rand.Intn(len(emojis))]
 
